@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री गौ सेवा धाम ट्रस्ट - Shree Gau Seva Dham Trust</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: {
+                            50: '#fff8f0',
+                            100: '#fff3e0',
+                            500: '#f57c00',
+                            600: '#e65100',
+                            700: '#bf360c',
+                        },
+                        cream: {
+                            50: '#fdfbf7',
+                            100: '#f7f3eb',
+                            200: '#eee6d8',
+                            300: '#e0d3bf',
+                        },
+                        earth: {
+                            800: '#3e2723',
+                            900: '#271714',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        hindi: ['Hind', 'sans-serif'],
+                        heading: ['Playfair Display', 'Marcellus', 'Georgia', 'serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        marcellus: ['Marcellus', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        dmserif: ['DM Serif Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=DM+Serif+Display:ital@0;1&family=Hind:wght@400;500;600;700&family=Marcellus&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', 'Hind', sans-serif;
+            background-color: #fdfbf7;
+            color: #271714;
+        }
+        /* English Headings Typography (Google Fonts CDN) */
+        h1:not(.font-hindi),
+        h2:not(.font-hindi),
+        h3:not(.font-hindi),
+        h4:not(.font-hindi),
+        .font-heading {
+            font-family: 'Playfair Display', 'Marcellus', Georgia, serif;
+            letter-spacing: -0.01em;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#e65100 0.5px, transparent 0.5px);
+            background-size: 16px 16px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-cream-50 text-earth-900 selection:bg-saffron-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-saffron-700 text-white text-xs md:text-sm py-2 px-4 text-center font-hindi flex justify-between items-center max-w-7xl mx-auto rounded-b-lg">
+        <div class="hidden sm:flex items-center gap-4">
+            <span><i class="fa-solid fa-phone mr-1"></i> +91 7303604248</span>
+            <span><i class="fa-solid fa-envelope mr-1"></i> info@gausevadham.org</span>
+        </div>
+        
+        <div class="hidden md:flex gap-3">
+            <a href="#" class="hover:text-saffron-100"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-saffron-100"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-saffron-100"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-cream-50/90 backdrop-blur-md border-b border-cream-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="images/logo.png" alt="Shree Gau Seva Dham Trust Logo" class="w-12 h-12 rounded-full shadow-md border-2 border-saffron-200 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div>
+                        <h1 class="font-hindi text-xl md:text-2xl font-bold text-saffron-700 leading-tight">श्री गौ सेवा धाम ट्रस्ट</h1>
+                        <p class="text-xs text-earth-800 tracking-wider font-medium uppercase">Shree Gau Seva Dham Trust</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-earth-800">
+                    <a href="#home" class="hover:text-saffron-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-saffron-600 transition-colors">About Us</a>
+                    <a href="#activities" class="hover:text-saffron-600 transition-colors">Gau Seva</a>
+                    <a href="#donation" class="hover:text-saffron-600 transition-colors">Donation</a>
+                    <a href="#cows" class="hover:text-saffron-600 transition-colors">Our Cows</a>
+                    <a href="#gallery" class="hover:text-saffron-600 transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-saffron-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#donation" class="bg-saffron-600 hover:bg-saffron-700 text-white font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-saffron-600/30 transition-all hover:scale-105 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-heart text-xs"></i> Donate Now
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 text-earth-900 hover:text-saffron-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-b border-cream-200 px-4 pt-2 pb-6 space-y-3 font-medium text-earth-800">
+            <a href="#home" class="block py-2 hover:text-saffron-600 border-b border-cream-200">Home</a>
+            <a href="#about" class="block py-2 hover:text-saffron-600 border-b border-cream-200">About Us</a>
+            <a href="#activities" class="block py-2 hover:text-saffron-600 border-b border-cream-200">Gau Seva Activities</a>
+            <a href="#donation" class="block py-2 hover:text-saffron-600 border-b border-cream-200">Donation Plans</a>
+            <a href="#cows" class="block py-2 hover:text-saffron-600 border-b border-cream-200">Our Cows</a>
+            <a href="#gallery" class="block py-2 hover:text-saffron-600 border-b border-cream-200">Gallery</a>
+            <a href="#contact" class="block py-2 hover:text-saffron-600">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[90vh] flex flex-col justify-center py-16 md:py-24 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('images/hero-bg.png');">
+        <!-- Ambient Warm Gradient Overlay for Left Text Readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-50/95 via-amber-50/80 to-transparent lg:from-amber-50/95 lg:via-amber-50/50 lg:to-transparent z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-saffron-100/90 border border-saffron-500/30 px-4 py-1.5 rounded-full text-saffron-800 text-xs sm:text-sm font-semibold backdrop-blur-sm shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-saffron-600 animate-ping"></span>
+                        100% Non-Profit Registered Gaushala Trust
+                    </div>
+                    <h1 class="font-hindi text-4xl sm:text-5xl lg:text-6xl font-extrabold text-earth-900 leading-tight drop-shadow-sm">
+                        गौ सेवा ही <br class="hidden sm:inline">
+                        <span class="text-saffron-600">परम सेवा है</span>
+                    </h1>
+                    <p class="font-hindi text-lg sm:text-xl text-earth-800 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+                        आओ, मिलकर करें गौ माता की सेवा। संत एवं असहाय गौवंश को आश्रय, भोजन एवं नि:शुल्क इलाज प्रदान करना ही हमारा संकल्प है।
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#donation" class="bg-saffron-600 hover:bg-saffron-700 text-white font-semibold text-base px-8 py-3.5 rounded-full shadow-lg shadow-saffron-600/30 transition-all hover:-translate-y-0.5 text-center">
+                            Donate Now
+                        </a>
+                        <a href="#about" class="bg-white/95 hover:bg-white text-earth-900 border border-cream-300 font-semibold text-base px-8 py-3.5 rounded-full shadow-md transition-all hover:-translate-y-0.5 text-center backdrop-blur-sm">
+                            Our Mission
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Open space for the background cow and calf to shine on the right -->
+                <div class="hidden lg:block lg:col-span-5 min-h-[300px]"></div>
+            </div>
+
+            <!-- Feature Badges Banner -->
+            <!-- <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/60 shadow-lg flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0 shadow-sm">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-earth-900">Food & Fodder</h4>
+                        <p class="text-xs text-gray-500">Healthy green fodder</p>
+                    </div>
+                </div>
+                <div class="bg-white/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/60 shadow-lg flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0 shadow-sm">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-earth-900">Medical Care</h4>
+                        <p class="text-xs text-gray-500">24/7 Veterinary support</p>
+                    </div>
+                </div>
+                <div class="bg-white/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/60 shadow-lg flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0 shadow-sm">
+                        <i class="fa-solid fa-house-chimney-heart"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-earth-900">Shelter & Care</h4>
+                        <p class="text-xs text-gray-500">Safe clean gaushala</p>
+                    </div>
+                </div>
+                <div class="bg-white/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/60 shadow-lg flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0 shadow-sm">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-earth-900">Cow Rescue</h4>
+                        <p class="text-xs text-gray-500">Emergency rescue</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- ABOUT OUR TRUST SECTION -->
+    <section id="about" class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Composition -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="images/abt.png" alt="Shree Gau Seva Dham Gaushala Cow" class="w-full h-[400px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <!-- Decorative Badge -->
+                    <div class="absolute -bottom-6 -right-4 sm:-right-6 z-20 bg-gradient-to-br from-saffron-600 to-amber-500 text-white p-5 rounded-2xl shadow-xl text-center">
+                        <span class="block text-3xl font-extrabold">14+</span>
+                        <span class="text-xs font-medium uppercase tracking-wider">Years of Dedication</span>
+                    </div>
+                </div>
+
+                <!-- Right Content & History -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider">
+                        About Our Trust
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">
+                        Serving Cows, Serving Humanity
+                    </h2>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Shree Gau Seva Dham Trust is a registered charitable trust dedicated to the protection, care, and welfare of cows. Our gaushala provides a safe haven for abandoned, injured, and old cows, while also promoting awareness about the importance of cow protection in our society.
+                    </p>
+                    
+                    <!-- History snippet -->
+                    <div class="bg-white p-6 rounded-2xl border border-cream-200 shadow-sm space-y-2">
+                        <h3 class="font-hindi text-xl font-bold text-saffron-600">Our History (हमारा इतिहास)</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Shree Gau Seva Dham Trust was established in 2010 with a vision to protect and serve cows. What started as a small initiative has now grown into a dedicated gaushala providing care and shelter to hundreds of cows.
+                        </p>
+                    </div>
+
+                    <!-- Stats Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+                        <div class="bg-saffron-50 p-4 rounded-xl text-center border border-saffron-100">
+                            <span class="block text-2xl font-bold text-saffron-700">2010</span>
+                            <span class="text-xs text-gray-600 font-medium">Established</span>
+                        </div>
+                        <div class="bg-saffron-50 p-4 rounded-xl text-center border border-saffron-100">
+                            <span class="block text-2xl font-bold text-saffron-700">500+</span>
+                            <span class="text-xs text-gray-600 font-medium">Cows Protected</span>
+                        </div>
+                        <div class="bg-saffron-50 p-4 rounded-xl text-center border border-saffron-100">
+                            <span class="block text-2xl font-bold text-saffron-700">15+</span>
+                            <span class="text-xs text-gray-600 font-medium">Volunteers</span>
+                        </div>
+                        <div class="bg-saffron-50 p-4 rounded-xl text-center border border-saffron-100">
+                            <span class="block text-2xl font-bold text-saffron-700">100%</span>
+                            <span class="text-xs text-gray-600 font-medium">Transparency</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Vision, Mission, Values Grid Row -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 shadow-sm flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500 text-white flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-earth-900">Our Vision</h3>
+                        <p class="text-sm text-gray-600 mt-1">A compassionate society where every cow is safe, healthy, and respected with dignified shelter.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 shadow-sm flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500 text-white flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-earth-900">Our Mission</h3>
+                        <p class="text-sm text-gray-600 mt-1">To provide shelter, food, medical care, and protection to cows and create awareness about cow welfare.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 shadow-sm flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500 text-white flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-earth-900">Our Core Values</h3>
+                        <ul class="text-sm text-gray-600 mt-1 grid grid-cols-2 gap-2 list-disc list-inside">
+                            <li>Compassion</li>
+                            <li>Service</li>
+                            <li>Integrity</li>
+                            <li>Sustainability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUSTEES & LEADERSHIP -->
+    <section class="py-16 bg-cream-100 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-earth-900">Meet Our Trustees</h2>
+                <p class="text-gray-600 mt-2 text-sm">Guided by dedicated individuals committed to cow protection & spiritual service.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-5 rounded-2xl text-center border border-cream-200 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Mahesh Sharma" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-saffron-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80';">
+                    <h3 class="font-bold text-base text-earth-900">Mahesh Sharma</h3>
+                    <p class="text-xs text-saffron-600 font-medium">President</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl text-center border border-cream-200 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Suresh Verma" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-saffron-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80';">
+                    <h3 class="font-bold text-base text-earth-900">Suresh Verma</h3>
+                    <p class="text-xs text-saffron-600 font-medium">Vice President</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl text-center border border-cream-200 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80" alt="Ravi Gupta" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-saffron-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80';">
+                    <h3 class="font-bold text-base text-earth-900">Ravi Gupta</h3>
+                    <p class="text-xs text-saffron-600 font-medium">Secretary</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl text-center border border-cream-200 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Anita Singh" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-saffron-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80';">
+                    <h3 class="font-bold text-base text-earth-900">Anita Singh</h3>
+                    <p class="text-xs text-saffron-600 font-medium">Treasurer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST CREDENTIALS & BANNER -->
+    <section class="py-12 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm">
+                <h3 class="text-center font-bold text-gray-800 text-lg mb-6">Trust Registration & Credentials</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 bg-cream-50 rounded-xl border border-cream-200">
+                        <i class="fa-solid fa-file-contract text-2xl text-saffron-600 mb-2"></i>
+                        <h4 class="font-bold text-xs sm:text-sm text-earth-900">Registered Trust</h4>
+                        <p class="text-xs text-gray-500">(Under Indian Trust Act)</p>
+                    </div>
+                    <div class="p-4 bg-cream-50 rounded-xl border border-cream-200">
+                        <i class="fa-solid fa-id-card text-2xl text-saffron-600 mb-2"></i>
+                        <h4 class="font-bold text-xs sm:text-sm text-earth-900">PAN Card</h4>
+                        <p class="text-xs text-gray-500">(Available)</p>
+                    </div>
+                    <div class="p-4 bg-cream-50 rounded-xl border border-cream-200">
+                        <i class="fa-solid fa-percent text-2xl text-saffron-600 mb-2"></i>
+                        <h4 class="font-bold text-xs sm:text-sm text-earth-900">80G Tax Exempt</h4>
+                        <p class="text-xs text-gray-500">(Available)</p>
+                    </div>
+                    <div class="p-4 bg-cream-50 rounded-xl border border-cream-200">
+                        <i class="fa-solid fa-certificate text-2xl text-saffron-600 mb-2"></i>
+                        <h4 class="font-bold text-xs sm:text-sm text-earth-900">12A Certified</h4>
+                        <p class="text-xs text-gray-500">(Available)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote Banner -->
+            <div style="background-image :url('./cta-banner.png'); background-repeat: no-repeat; background-size: cover;" class="mt-8 bg-gradient-to-r from-saffron-600 to-saffron-700 rounded-3xl p-8 sm:p-12 text-center text-white shadow-xl relative overflow-hidden">
+                <div  class="relative z-10 max-w-3xl mx-auto space-y-4">
+                    <i class="fa-solid fa-quote-left text-3xl opacity-50"></i>
+                    <p class="text-2xl sm:text-3xl font-hindi font-bold leading-relaxed">
+                        "Cow protection is not just a duty, it is a step towards a better world."
+                    </p>
+                    <p class="text-saffron-100 font-medium text-sm">-- Shree Gau Seva Dham Trust</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAU SEVA ACTIVITIES -->
+    <section id="activities" class="py-20 bg-cream-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider mb-2">
+                    Our Work
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">Gau Seva Activities</h2>
+                <p class="text-gray-600 mt-2">Dedicated comprehensive care and protection to every single cow.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Activity Card 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Daily Feeding</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Providing fresh green fodder, grains, jaggery, and clean drinking water to all cows twice daily.</p>
+                </div>
+
+                <!-- Activity Card 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Medical Care</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Regular health checkups, emergency surgeries, vaccinations, and round-the-clock veterinary doctors on call.</p>
+                </div>
+
+                <!-- Activity Card 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Rescue & Rehabilitation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Dedicated ambulance service to rescue accident-injured, sick, or abandoned stray cows from roads.</p>
+                </div>
+
+                <!-- Activity Card 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-campground"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Shelter & Cleanliness</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Spacious, hygienic, climate-controlled sheds ensuring safety during harsh winters and summers.</p>
+                </div>
+
+                <!-- Activity Card 5 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Calves & Senior Care</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Special nutrition and gentle care for newly born calves and non-milking aged senior cows.</p>
+                </div>
+
+                <!-- Activity Card 6 -->
+                <div class="bg-white rounded-2xl p-6 border border-cream-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-saffron-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-earth-900 mb-2">Organic Bio-Energy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Utilizing cow dung for vermicompost and bio-gas generation promoting sustainable eco-friendly farming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OUR BELOVED COWS SHOWCASE -->
+    <section id="cows" class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider mb-2">
+                    Meet Our Residents
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">Our Beloved Cows</h2>
+                <p class="text-gray-600 mt-2">You can directly sponsor a cow and be a part of their healing journey.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cow Profile 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-lg transition-all group">
+                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=500&q=80" alt="Gauri" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=500&q=80';">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-earth-900">Gauri</h3>
+                            <span class="text-xs bg-saffron-100 text-saffron-700 px-2.5 py-0.5 rounded-full font-medium">ID: #0104</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Rescued 2 years ago from highway accident. Fully recovered and healthy now.</p>
+                        <div class="flex justify-between text-xs text-gray-600 pt-2 border-t border-cream-200">
+                            <span>Age: 5 Years</span>
+                            <span>Status: Healthy</span>
+                        </div>
+                        <a href="#donation" class="block text-center w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-2 rounded-xl text-xs transition-colors">
+                            Sponsor Gauri
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cow Profile 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-lg transition-all group">
+                    <img src="https://images.unsplash.com/photo-1592174868460-904a3aaafb21?auto=format&fit=crop&w=500&q=80" alt="Lakshmi" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=500&q=80';">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-earth-900">Lakshmi</h3>
+                            <span class="text-xs bg-saffron-100 text-saffron-700 px-2.5 py-0.5 rounded-full font-medium">ID: #0112</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Elderly cow cared for with special soft nutrition fodder and extra love.</p>
+                        <div class="flex justify-between text-xs text-gray-600 pt-2 border-t border-cream-200">
+                            <span>Age: 11 Years</span>
+                            <span>Status: Senior Care</span>
+                        </div>
+                        <a href="#donation" class="block text-center w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-2 rounded-xl text-xs transition-colors">
+                            Sponsor Lakshmi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cow Profile 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-lg transition-all group">
+                    <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=500&q=80" alt="Radha" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=500&q=80';">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-earth-900">Radha</h3>
+                            <span class="text-xs bg-saffron-100 text-saffron-700 px-2.5 py-0.5 rounded-full font-medium">ID: #0201</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Very gentle and friendly cow. Loves eating fresh jaggery and green fodder.</p>
+                        <div class="flex justify-between text-xs text-gray-600 pt-2 border-t border-cream-200">
+                            <span>Age: 4 Years</span>
+                            <span>Status: Healthy</span>
+                        </div>
+                        <a href="#donation" class="block text-center w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-2 rounded-xl text-xs transition-colors">
+                            Sponsor Radha
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cow Profile 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-lg transition-all group">
+                    <img src="https://images.unsplash.com/photo-1502590464431-3b66d77494d7?auto=format&fit=crop&w=500&q=80" alt="Sita" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=500&q=80';">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-earth-900">Sita</h3>
+                            <span class="text-xs bg-saffron-100 text-saffron-700 px-2.5 py-0.5 rounded-full font-medium">ID: #0224</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Rescued calf currently undergoing medical care and regular monitoring.</p>
+                        <div class="flex justify-between text-xs text-gray-600 pt-2 border-t border-cream-200">
+                            <span>Age: 8 Months</span>
+                            <span>Status: Medical Care</span>
+                        </div>
+                        <a href="#donation" class="block text-center w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-2 rounded-xl text-xs transition-colors">
+                            Sponsor Sita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-cream-100 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider mb-2">
+                    Visual Memories
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">Moments from Our Gaushala</h2>
+                <p class="text-gray-600 mt-2">Glance into the daily life, feeding, and medical care at our sanctuary.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8" id="gallery-filters">
+                <button onclick="filterGallery('all')" class="gallery-btn active bg-saffron-600 text-white px-4 py-2 rounded-full text-xs font-medium">All</button>
+                <button onclick="filterGallery('feeding')" class="gallery-btn bg-white text-earth-800 border border-cream-200 px-4 py-2 rounded-full text-xs font-medium hover:bg-saffron-50">Feeding</button>
+                <button onclick="filterGallery('rescue')" class="gallery-btn bg-white text-earth-800 border border-cream-200 px-4 py-2 rounded-full text-xs font-medium hover:bg-saffron-50">Rescue</button>
+                <button onclick="filterGallery('medical')" class="gallery-btn bg-white text-earth-800 border border-cream-200 px-4 py-2 rounded-full text-xs font-medium hover:bg-saffron-50">Medical</button>
+                <button onclick="filterGallery('events')" class="gallery-btn bg-white text-earth-800 border border-cream-200 px-4 py-2 rounded-full text-xs font-medium hover:bg-saffron-50">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item feeding overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1545407263-7ff5aa2ad921?auto=format&fit=crop&w=500&q=80" alt="Daily Feeding" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item rescue overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1595365691689-6b7b4e1970cf?auto=format&fit=crop&w=500&q=80" alt="Rescue Operation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item medical overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1595664652035-0956d50e0311?auto=format&fit=crop&w=500&q=80" alt="Medical Checkup" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item events overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1673229266917-89abfa3ebc58?auto=format&fit=crop&w=500&q=80" alt="Gopashtami Event" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item feeding overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=500&q=80" alt="Green Fodder Distribution" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1545407263-7ff5aa2ad921?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item rescue overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1708965799324-41fb097e3f4d?auto=format&fit=crop&w=500&q=80" alt="Gaushala Shed" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item medical overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1762070329830-0fb07d6937b8?auto=format&fit=crop&w=500&q=80" alt="Vet Treatment" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1595664652035-0956d50e0311?auto=format&fit=crop&w=500&q=80';">
+                </div>
+                <div class="gallery-item events overflow-hidden rounded-2xl border border-cream-200 shadow-sm h-48">
+                    <img src="https://images.unsplash.com/photo-1710757254069-7bf28adb62e6?auto=format&fit=crop&w=500&q=80" alt="Volunteers Service" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=500&q=80';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT STATISTICS -->
+    <section class="py-16 bg-saffron-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <i class="fa-solid fa-cow text-3xl sm:text-4xl text-saffron-100 mb-2"></i>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">500+</h3>
+                    <p class="text-xs sm:text-sm text-saffron-100 font-medium">Cows Under Care</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck-pickup text-3xl sm:text-4xl text-saffron-100 mb-2"></i>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">120+</h3>
+                    <p class="text-xs sm:text-sm text-saffron-100 font-medium">Rescued & Rehabilitated</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-notes-medical text-3xl sm:text-4xl text-saffron-100 mb-2"></i>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">350+</h3>
+                    <p class="text-xs sm:text-sm text-saffron-100 font-medium">Medical Treatments</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users text-3xl sm:text-4xl text-saffron-100 mb-2"></i>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">100+</h3>
+                    <p class="text-xs sm:text-sm text-saffron-100 font-medium">Active Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- DONATION PLANS SECTION -->
+    <section id="donation" class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider mb-2">
+                    Make A Difference
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">Choose Your Donation Plan</h2>
+                <p class="text-gray-600 mt-2">Your small contribution helps in providing food, medical care, and shelter to our cows.</p>
+            </div>
+
+            <!-- Tier Cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Tier 1 -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-cream-200 hover:border-saffron-500 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-saffron-50 text-saffron-600 flex items-center justify-center text-xl mb-4">
+                            🌾
+                        </div>
+                        <h3 class="text-xl font-bold text-earth-900">Fodder Seva</h3>
+                        <p class="text-xs text-gray-500 mt-1">Feeds a cow for a month</p>
+                        <div class="mt-4 mb-6">
+                            <span class="text-3xl font-extrabold text-saffron-600">₹ 500</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fresh Green Fodder</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Clean Drinking Water</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>80G Tax Receipt</li>
+                        </ul>
+                    </div>
+                    <a href="#bank-details" class="w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-3 rounded-xl text-center shadow-md transition-colors block">
+                        Donate Now
+                    </a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-saffron-500 shadow-md hover:shadow-xl transition-all flex flex-col justify-between relative">
+                    <span class="absolute -top-3 right-6 bg-saffron-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Most Popular</span>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-saffron-50 text-saffron-600 flex items-center justify-center text-xl mb-4">
+                            🩺
+                        </div>
+                        <h3 class="text-xl font-bold text-earth-900">Medical Seva</h3>
+                        <p class="text-xs text-gray-500 mt-1">Supports medical treatment</p>
+                        <div class="mt-4 mb-6">
+                            <span class="text-3xl font-extrabold text-saffron-600">₹ 1,000</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Emergency Medicines</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Vet Doctor Visits</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>80G Tax Receipt</li>
+                        </ul>
+                    </div>
+                    <a href="#bank-details" class="w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-3 rounded-xl text-center shadow-md transition-colors block">
+                        Donate Now
+                    </a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-cream-200 hover:border-saffron-500 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-saffron-50 text-saffron-600 flex items-center justify-center text-xl mb-4">
+                            🛖
+                        </div>
+                        <h3 class="text-xl font-bold text-earth-900">Shelter Seva</h3>
+                        <p class="text-xs text-gray-500 mt-1">Helps in shelter maintenance</p>
+                        <div class="mt-4 mb-6">
+                            <span class="text-3xl font-extrabold text-saffron-600">₹ 2,500</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Shed Repairs & Upkeep</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Clean Bedding & Hygiene</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>80G Tax Receipt</li>
+                        </ul>
+                    </div>
+                    <a href="#bank-details" class="w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-3 rounded-xl text-center shadow-md transition-colors block">
+                        Donate Now
+                    </a>
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-cream-200 hover:border-saffron-500 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-saffron-50 text-saffron-600 flex items-center justify-center text-xl mb-4">
+                            🐄
+                        </div>
+                        <h3 class="text-xl font-bold text-earth-900">Sponsorship</h3>
+                        <p class="text-xs text-gray-500 mt-1">Adopt a cow long-term</p>
+                        <div class="mt-4 mb-6">
+                            <span class="text-3xl font-extrabold text-saffron-600">₹ 5,000+</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Complete Monthly Care</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Personalized Cow Photo Tag</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i>80G Tax Exemption Certificate</li>
+                        </ul>
+                    </div>
+                    <a href="#bank-details" class="w-full bg-saffron-600 hover:bg-saffron-700 text-white font-medium py-3 rounded-xl text-center shadow-md transition-colors block">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- PAYMENT & BANK DETAILS ACCORDION CONTAINER -->
+            <div id="bank-details" class="bg-white rounded-3xl border border-cream-200 p-6 sm:p-10 shadow-lg">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Quick Seva Donation Form (Exact UI from Design) -->
+                    <div class="lg:col-span-7 bg-white rounded-2xl border border-cream-200 p-5 sm:p-7 shadow-sm space-y-5">
+                        <!-- Card Header -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-cream-200">
+                            <div>
+                                <h3 class="text-2xl sm:text-[26px] font-serif font-bold text-earth-900 tracking-tight">Quick Seva Donation</h3>
+                                <p class="text-xs sm:text-sm text-gray-500 mt-0.5">Choose an amount or enter custom contribution</p>
+                            </div>
+                            <div class="self-start sm:self-center">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase border border-amber-400/80 bg-amber-50 text-amber-800 shadow-xs">
+                                    <i class="fa-solid fa-circle-check text-amber-600"></i>
+                                    VERIFIED 80G TRUST
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Donation Form -->
+                        <form id="quick-seva-form" onsubmit="handleSevaPayment(event)" class="space-y-4">
+                            <!-- Select Seva Amount Section -->
+                            <div class="space-y-2.5">
+                                <label class="block text-xs font-bold text-earth-900 uppercase tracking-wider">
+                                    SELECT SEVA AMOUNT (INR)
+                                </label>
+                                
+                                <!-- Preset Buttons Grid (3 cols x 2 rows) -->
+                                <div class="grid grid-cols-3 gap-2.5" id="preset-amount-container">
+                                    <button type="button" onclick="setDonationAmount(500, this)" data-amount="500" class="seva-preset-btn py-2.5 px-3 rounded-xl border-2 border-saffron-600 bg-saffron-50 text-saffron-700 font-bold text-sm sm:text-base text-center transition-all shadow-sm">
+                                        ₹500
+                                    </button>
+                                    <button type="button" onclick="setDonationAmount(1100, this)" data-amount="1100" class="seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all">
+                                        ₹1,100
+                                    </button>
+                                    <button type="button" onclick="setDonationAmount(2100, this)" data-amount="2100" class="seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all">
+                                        ₹2,100
+                                    </button>
+                                    <button type="button" onclick="setDonationAmount(5100, this)" data-amount="5100" class="seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all">
+                                        ₹5,100
+                                    </button>
+                                    <button type="button" onclick="setDonationAmount(11000, this)" data-amount="11000" class="seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all">
+                                        ₹11,000
+                                    </button>
+                                    <button type="button" onclick="setDonationAmount(21000, this)" data-amount="21000" class="seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all">
+                                        ₹21,000
+                                    </button>
+                                </div>
+
+                                <!-- Custom Amount Input -->
+                                <div class="relative flex items-center mt-2">
+                                    <span class="absolute left-4 text-base font-bold text-earth-800">₹</span>
+                                    <input type="number" id="seva-custom-amount" min="10" value="500" oninput="onCustomAmountChange(this.value)" placeholder="Enter custom amount" class="w-full pl-9 pr-4 py-3 rounded-xl border border-cream-300 bg-[#FDF8EE] font-bold text-earth-900 text-base focus:ring-2 focus:ring-saffron-500 focus:bg-white focus:outline-none transition-all">
+                                </div>
+                            </div>
+
+                            <!-- Input Fields -->
+                            <div class="space-y-3 pt-1">
+                                <!-- Row 1: 2 Columns for Name & Phone -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-earth-900 uppercase tracking-wider mb-1">
+                                            YOUR FULL NAME *
+                                        </label>
+                                        <input type="text" id="seva-donor-name" required placeholder="e.g. Ramesh Chandra" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 bg-[#FDF8EE] focus:ring-2 focus:ring-saffron-500 focus:bg-white focus:outline-none text-xs sm:text-sm text-earth-900 transition-all placeholder:text-gray-400">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-earth-900 uppercase tracking-wider mb-1">
+                                            PHONE NUMBER (FOR WHATSAPP RECEIPT) *
+                                        </label>
+                                        <input type="tel" id="seva-donor-phone" required placeholder="+91 9876543210" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 bg-[#FDF8EE] focus:ring-2 focus:ring-saffron-500 focus:bg-white focus:outline-none text-xs sm:text-sm text-earth-900 transition-all placeholder:text-gray-400">
+                                    </div>
+                                </div>
+
+                                <!-- Row 2: Email -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-earth-900 uppercase tracking-wider mb-1">
+                                        EMAIL ADDRESS (FOR 80G CERTIFICATE) *
+                                    </label>
+                                    <input type="email" id="seva-donor-email" required placeholder="your.name@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 bg-[#FDF8EE] focus:ring-2 focus:ring-saffron-500 focus:bg-white focus:outline-none text-xs sm:text-sm text-earth-900 transition-all placeholder:text-gray-400">
+                                </div>
+
+                                <!-- Row 3: PAN Number -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-earth-900 uppercase tracking-wider mb-1">
+                                        PAN CARD NUMBER (OPTIONAL, FOR 80G TAX BENEFIT)
+                                    </label>
+                                    <input type="text" id="seva-donor-pan" maxlength="10" placeholder="ABCDE1234F" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 bg-[#FDF8EE] uppercase focus:ring-2 focus:ring-saffron-500 focus:bg-white focus:outline-none text-xs sm:text-sm text-earth-900 transition-all placeholder:text-gray-400">
+                                </div>
+                            </div>
+
+                            <!-- Action Button -->
+                            <div class="pt-2">
+                                <button type="submit" class="w-full bg-[#E65100] hover:bg-[#d84315] text-white font-bold py-3.5 sm:py-4 px-6 rounded-2xl text-sm sm:text-base flex items-center justify-center gap-3 shadow-lg shadow-orange-600/25 hover:shadow-orange-600/40 transition-all transform active:scale-[0.99] cursor-pointer">
+                                    <i class="fa-solid fa-qrcode text-lg sm:text-xl"></i>
+                                    <span>Proceed to Pay with UPI / Card</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- UPI Payment Section (Right Column) -->
+                    <div class="lg:col-span-5 bg-cream-50 p-6 sm:p-7 rounded-2xl border border-cream-200 text-center space-y-4">
+                        <div class="space-y-1">
+                            <h4 class="text-xl font-bold text-earth-900">Scan & Pay via UPI</h4>
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-saffron-100/70 border border-saffron-300/60 text-xs text-saffron-800 font-semibold">
+                                <span>Amount:</span>
+                                <span id="qr-amount-display" class="font-extrabold text-saffron-700 text-sm">₹500</span>
+                            </div>
+                        </div>
+
+                        <!-- Live Dynamic QR Code -->
+                        <div class="bg-white p-4 rounded-2xl inline-block shadow-md border border-cream-200">
+                            <img id="dynamic-qr-image" 
+                                 src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi%3A%2F%2Fpay%3Fpa%3Dgausevadham%40sbi%26pn%3DShree%2520Gau%2520Seva%2520Dham%2520Trust%26am%3D500%26cu%3DINR" 
+                                 alt="UPI QR Code" 
+                                 class="w-44 h-44 mx-auto rounded-lg object-contain">
+                        </div>
+
+                        <!-- Direct UPI App Button (Mobile Friendly) -->
+                        <a id="direct-upi-pay-link" href="upi://pay?pa=gausevadham@sbi&pn=Shree%20Gau%20Seva%20Dham%20Trust&am=500&cu=INR" class="block w-full bg-saffron-600 hover:bg-saffron-700 text-white font-bold py-3 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                            <i class="fa-solid fa-mobile-screen-button mr-1.5"></i>
+                            Open UPI App (GPay / PhonePe / Paytm)
+                        </a>
+
+                        <div class="text-xs text-gray-600 pt-1">
+                            UPI ID: <span class="font-bold text-saffron-700 font-mono" id="upiId">gausevadham@sbi</span>
+                            <button type="button" onclick="copyUPI()" class="ml-2 text-xs text-saffron-600 hover:underline inline-flex items-center gap-1"><i class="fa-regular fa-copy"></i> Copy</button>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Supports GPay, PhonePe, Paytm, BHIM & all Bank UPI Apps</p>
+                    </div>
+                </div>
+
+                <!-- Receipt Request Alert -->
+                <div class="mt-8 pt-6 border-t border-cream-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-receipt text-saffron-600 text-base"></i>
+                        <span>Need 80G Tax Exemption Receipt? Share transaction screenshot on WhatsApp.</span>
+                    </div>
+                    <a href="https://wa.me/917303604248" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2 shrink-0">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Screenshot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATION UTILIZATION BREAKDOWN -->
+    <section class="py-16 bg-cream-100 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <h3 class="text-2xl font-bold text-earth-900">Donation Utilization Transparency</h3>
+                <p class="text-sm text-gray-600">We ensure complete transparency in how every single rupee of your donation is utilized.</p>
+                
+                <div class="space-y-4 pt-4 text-left">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold text-earth-900 mb-1">
+                            <span>Cow Food & Green Fodder</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="w-full bg-cream-200 rounded-full h-3">
+                            <div class="bg-saffron-600 h-3 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold text-earth-900 mb-1">
+                            <span>Medical Care & Vet Doctors</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="w-full bg-cream-200 rounded-full h-3">
+                            <div class="bg-amber-500 h-3 rounded-full" style="width: 15%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold text-earth-900 mb-1">
+                            <span>Shelter Maintenance & Cleanliness</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="w-full bg-cream-200 rounded-full h-3">
+                            <div class="bg-earth-800 h-3 rounded-full" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold text-earth-900 mb-1">
+                            <span>Administrative & Volunteer Support</span>
+                            <span>5%</span>
+                        </div>
+                        <div class="w-full bg-cream-200 rounded-full h-3">
+                            <div class="bg-gray-400 h-3 rounded-full" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / SUPPORTERS -->
+    <section class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-earth-900">Hear from Our Supporters</h2>
+                <p class="text-gray-600 mt-2">Real stories from compassionate donors and volunteers.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm relative">
+                    <i class="fa-solid fa-quote-right text-3xl text-saffron-100 absolute top-6 right-6"></i>
+                    <p class="text-sm text-gray-600 leading-relaxed italic mb-6">
+                        "Visiting Shree Gau Seva Dham Trust was a spiritual experience. The transparency and care with which they treat abandoned cows is truly inspiring."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-saffron-500 text-white flex items-center justify-center font-bold">R</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-earth-900">Ramesh Sharma</h4>
+                            <p class="text-xs text-gray-500">Regular Donor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm relative">
+                    <i class="fa-solid fa-quote-right text-3xl text-saffron-100 absolute top-6 right-6"></i>
+                    <p class="text-sm text-gray-600 leading-relaxed italic mb-6">
+                        "I regularly contribute under the Fodder Seva plan on my birthday. Receiving tax exemption receipts promptly over WhatsApp makes it so seamless."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-saffron-500 text-white flex items-center justify-center font-bold">P</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-earth-900">Priya Agarwal</h4>
+                            <p class="text-xs text-gray-500">Monthly Sponsor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm relative">
+                    <i class="fa-solid fa-quote-right text-3xl text-saffron-100 absolute top-6 right-6"></i>
+                    <p class="text-sm text-gray-600 leading-relaxed italic mb-6">
+                        "The medical team saved an injured stray cow from my neighborhood within 30 minutes of calling their ambulance line. Remarkable work!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-saffron-500 text-white flex items-center justify-center font-bold">V</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-earth-900">Vikram Gupta</h4>
+                            <p class="text-xs text-gray-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS ACCORDION SECTION -->
+    <section class="py-20 bg-cream-100 border-t border-cream-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-earth-900">Frequently Asked Questions</h2>
+                <p class="text-gray-600 mt-2 text-sm">Find answers to common questions about our trust & donation process.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-earth-900 text-sm sm:text-base flex justify-between items-center">
+                        <span>1. How can I donate to the trust?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-saffron-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-cream-100">
+                        You can donate directly through UPI (Scan QR code above), Direct Bank Transfer, or by visiting our Gaushala in person. We accept online contributions securely.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-earth-900 text-sm sm:text-base flex justify-between items-center">
+                        <span>2. Is my donation tax-exempt under 80G?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-saffron-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-cream-100">
+                        Yes! All donations made to Shree Gau Seva Dham Trust are eligible for tax deduction benefits under Section 80G of the Indian Income Tax Act.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-earth-900 text-sm sm:text-base flex justify-between items-center">
+                        <span>3. Can I visit the Gaushala in person?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-saffron-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-cream-100">
+                        Yes, visitors are warmly welcome between 8:00 AM and 6:00 PM every day (Monday to Sunday). You can participate in fodder distribution personally.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-earth-900 text-sm sm:text-base flex justify-between items-center">
+                        <span>4. How can I sponsor an individual cow?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-saffron-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-4" class="hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-cream-100">
+                        Select the "Sponsorship" plan or choose a specific cow from "Our Beloved Cows" showcase. You can make monthly or annual sponsorship payments.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US & LOCATION -->
+    <section id="contact" class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block bg-saffron-100 text-saffron-700 font-semibold px-4 py-1 rounded-full text-xs uppercase tracking-wider mb-2">
+                            Reach Out
+                        </div>
+                        <h2 class="text-3xl font-bold text-earth-900">Contact Us</h2>
+                        <p class="text-gray-600 mt-2 text-sm">We are always here to help. Reach out to us for any queries or to schedule a visit.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900 text-sm">Gaushala Location</h4>
+                                <p class="text-xs text-gray-600 mt-1">Village Anandpur, Main Meerut Road, Near Expressway, UP - 250001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900 text-sm">Phone / Rescue Helpline</h4>
+                                <p class="text-xs text-gray-600 mt-1">+91 7303604248</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900 text-sm">Email Address</h4>
+                                <p class="text-xs text-gray-600 mt-1">info@gausevadham.org</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-saffron-100 text-saffron-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900 text-sm">Visiting Hours</h4>
+                                <p class="text-xs text-gray-600 mt-1">8:00 AM - 6:00 PM (Monday - Sunday)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Frame -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-4 rounded-3xl border border-cream-200 shadow-sm h-full min-h-[350px]">
+                        <iframe title="Gaushala Location Map" class="w-full h-full min-h-[350px] rounded-2xl border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111728.80410186987!2d77.63665420379568!3d28.98638634893707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64c4e511451f%3A0x28974a6b57917849!2sMeerut%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="relative py-16 text-white bg-cover bg-center overflow-hidden" style="background-image: url('images/cta-banner.png');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6 relative z-10">
+            <h2 class="font-heading text-3xl sm:text-5xl font-extrabold drop-shadow">Let's Protect Our Gau Mata</h2>
+            <p class="text-saffron-100 text-sm sm:text-base max-w-2xl mx-auto drop-shadow">
+                Together we can ensure a better tomorrow for cows and humanity. Join us in this noble cause.
+            </p>
+            <a href="#donation" class="inline-block bg-white text-saffron-700 font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-cream-50 transition-all hover:scale-105">
+                Donate Now
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-earth-900 text-white pt-16 pb-8 border-t border-earth-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="images/logo.png" alt="Shree Gau Seva Dham Trust Logo" class="w-10 h-10 rounded-full border border-saffron-400/50 shadow-md object-cover">
+                        <h3 class="font-hindi text-lg font-bold text-saffron-500">श्री गौ सेवा धाम ट्रस्ट</h3>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Dedicated to the protection and welfare of cows and creating a better world through compassion and service.
+                    </p>
+                    <div class="flex gap-3 text-sm text-saffron-500 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-earth-800 flex items-center justify-center hover:bg-saffron-600 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-earth-800 flex items-center justify-center hover:bg-saffron-600 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-earth-800 flex items-center justify-center hover:bg-saffron-600 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-earth-800 flex items-center justify-center hover:bg-saffron-600 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-sm font-bold text-saffron-500 mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#home" class="hover:text-saffron-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-saffron-500 transition-colors">About Us</a></li>
+                        <li><a href="#activities" class="hover:text-saffron-500 transition-colors">Gau Seva</a></li>
+                        <li><a href="#cows" class="hover:text-saffron-500 transition-colors">Our Cows</a></li>
+                        <li><a href="#gallery" class="hover:text-saffron-500 transition-colors">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-saffron-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-sm font-bold text-saffron-500 mb-4 uppercase tracking-wider">Legal & Transparency</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#" class="hover:text-saffron-500 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-saffron-500 transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-saffron-500 transition-colors">Donation Policy</a></li>
+                        <li><a href="#" class="hover:text-saffron-500 transition-colors">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-saffron-500 transition-colors">80G / 12A Certificate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-sm font-bold text-saffron-500 mb-4 uppercase tracking-wider">Contact Info</h4>
+                    <ul class="space-y-3 text-xs text-gray-300">
+                        <li class="flex gap-2"><i class="fa-solid fa-phone text-saffron-500 mt-0.5"></i> +91 7303604248</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-envelope text-saffron-500 mt-0.5"></i> info@gausevadham.org</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-location-dot text-saffron-500 mt-0.5"></i> Meerut, Uttar Pradesh - 250001</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-earth-800 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>© 2026 Shree Gau Seva Dham Trust. All Rights Reserved.</p>
+                <p class="font-hindi text-saffron-500">सेवा • संरक्षण • संवर्धन</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SEVA PAYMENT MODAL -->
+    <div id="seva-payment-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-cream-200 relative text-center space-y-4">
+            <!-- Close Button -->
+            <button type="button" onclick="closePaymentModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-cream-100 hover:bg-cream-200 text-gray-500 hover:text-earth-900 flex items-center justify-center transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="space-y-1">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase border border-amber-400 bg-amber-50 text-amber-800">
+                    <i class="fa-solid fa-circle-check text-amber-600"></i>
+                    VERIFIED 80G TRUST
+                </span>
+                <h3 class="text-2xl font-serif font-bold text-earth-900 pt-1">Complete Your Seva Donation</h3>
+                <p class="text-xs text-gray-500">Scan QR Code or pay directly via UPI App</p>
+            </div>
+
+            <!-- Amount Banner -->
+            <div class="bg-[#FDF8EE] border border-cream-300 rounded-2xl py-3 px-4">
+                <span class="text-xs text-gray-600 font-semibold block">Donation Amount:</span>
+                <span id="modal-amount-display" class="text-3xl font-extrabold text-saffron-600">₹500</span>
+                <div class="text-[11px] text-gray-600 font-medium mt-1" id="modal-donor-info">Ramesh Chandra | +91 9876543210</div>
+                <div class="text-[10px] text-gray-500" id="modal-tax-info">Email: your.name@example.com</div>
+            </div>
+
+            <!-- QR Code -->
+            <div class="bg-white p-3 rounded-2xl inline-block shadow-inner border border-cream-200">
+                <img id="modal-qr-image" 
+                     src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi%3A%2F%2Fpay%3Fpa%3Dgausevadham%40sbi%26pn%3DShree%2520Gau%2520Seva%2520Dham%2520Trust%26am%3D500%26cu%3DINR" 
+                     alt="UPI Payment QR" 
+                     class="w-40 h-40 mx-auto rounded-lg object-contain">
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-2.5 pt-1">
+                <a id="modal-upi-link" href="upi://pay?pa=gausevadham@sbi&pn=Shree%20Gau%20Seva%20Dham%20Trust&am=500&cu=INR" class="block w-full bg-saffron-600 hover:bg-saffron-700 text-white font-bold py-3.5 rounded-xl text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Pay Directly via UPI App
+                </a>
+
+                <a id="modal-whatsapp-link" href="https://wa.me/917303604248" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    Send Receipt Request on WhatsApp
+                </a>
+            </div>
+
+            <div class="text-[11px] text-gray-500 pt-1 flex items-center justify-center gap-2">
+                <span>UPI ID: <b class="font-mono text-saffron-700">gausevadham@sbi</b></span>
+                <button type="button" onclick="copyUPI()" class="text-saffron-600 hover:underline">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script>
+        // Mobile Drawer Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Send WhatsApp Message via API
+        function sendWhatsAppMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('wa-name').value.trim();
+            const phone = document.getElementById('wa-phone').value.trim();
+            const seva = document.getElementById('wa-seva').value;
+            const amount = document.getElementById('wa-amount').value.trim() || 'स्वेच्छा से (As per wish)';
+            
+            const message = `🙏 *जय गौमाता! Shree Gau Seva Dham Trust*\n\n` +
+                            `👤 *नाम (Name):* ${name}\n` +
+                            `📞 *मोबाइल (Phone):* ${phone}\n` +
+                            `🌾 *सेवा का प्रकार (Seva):* ${seva}\n` +
+                            `💰 *दान राशि / संदेश:* ${amount}\n\n` +
+                            `कृपया आगे का विवरण व रसीद प्रदान करें। धन्यवाद!`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=917303604248&text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Set Seva Donation Preset Amount
+        function setDonationAmount(amount, btnElement) {
+            const input = document.getElementById('seva-custom-amount');
+            if (input) input.value = amount;
+
+            // Update preset buttons styling
+            const buttons = document.querySelectorAll('.seva-preset-btn');
+            buttons.forEach(btn => {
+                btn.className = 'seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all cursor-pointer';
+            });
+
+            if (btnElement) {
+                btnElement.className = 'seva-preset-btn py-2.5 px-3 rounded-xl border-2 border-saffron-600 bg-saffron-50 text-saffron-700 font-bold text-sm sm:text-base text-center transition-all shadow-sm cursor-pointer';
+            }
+
+            updateSevaPaymentInfo(amount);
+        }
+
+        // Custom Amount Input Handler
+        function onCustomAmountChange(val) {
+            const amount = parseInt(val) || 0;
+            const buttons = document.querySelectorAll('.seva-preset-btn');
+            buttons.forEach(btn => {
+                const btnAmount = parseInt(btn.getAttribute('data-amount'));
+                if (btnAmount === amount) {
+                    btn.className = 'seva-preset-btn py-2.5 px-3 rounded-xl border-2 border-saffron-600 bg-saffron-50 text-saffron-700 font-bold text-sm sm:text-base text-center transition-all shadow-sm cursor-pointer';
+                } else {
+                    btn.className = 'seva-preset-btn py-2.5 px-3 rounded-xl border border-cream-300 bg-[#FDF8EE] hover:border-saffron-400 text-earth-900 font-bold text-sm sm:text-base text-center transition-all cursor-pointer';
+                }
+            });
+
+            updateSevaPaymentInfo(amount);
+        }
+
+        // Update QR Code and UPI links in real-time
+        function updateSevaPaymentInfo(amount) {
+            const validAmount = amount > 0 ? amount : 500;
+            const formatted = '₹' + validAmount.toLocaleString('en-IN');
+            
+            const qrAmountDisplay = document.getElementById('qr-amount-display');
+            if (qrAmountDisplay) qrAmountDisplay.innerText = formatted;
+
+            const upiUrl = `upi://pay?pa=gausevadham@sbi&pn=Shree%20Gau%20Seva%20Dham%20Trust&am=${validAmount}&cu=INR&tn=Gau%20Seva%20Donation`;
+            
+            const directLink = document.getElementById('direct-upi-pay-link');
+            if (directLink) directLink.href = upiUrl;
+
+            const qrImg = document.getElementById('dynamic-qr-image');
+            if (qrImg) {
+                qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(upiUrl)}`;
+            }
+
+            const modalAmount = document.getElementById('modal-amount-display');
+            if (modalAmount) modalAmount.innerText = formatted;
+
+            const modalUpiLink = document.getElementById('modal-upi-link');
+            if (modalUpiLink) modalUpiLink.href = upiUrl;
+
+            const modalQrImg = document.getElementById('modal-qr-image');
+            if (modalQrImg) {
+                modalQrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(upiUrl)}`;
+            }
+        }
+
+        // Seva Donation Form Submit Handler
+        function handleSevaPayment(event) {
+            event.preventDefault();
+            const name = document.getElementById('seva-donor-name').value.trim();
+            const phone = document.getElementById('seva-donor-phone').value.trim();
+            const email = document.getElementById('seva-donor-email').value.trim();
+            const pan = document.getElementById('seva-donor-pan').value.trim();
+            const customAmountInput = document.getElementById('seva-custom-amount');
+            const amount = parseInt(customAmountInput.value) || 500;
+
+            if (!name || !phone) {
+                alert('कृपया अपना नाम और मोबाइल नंबर भरें (Please enter your name and phone number).');
+                return;
+            }
+
+            // Update modal fields
+            document.getElementById('modal-amount-display').innerText = '₹' + amount.toLocaleString('en-IN');
+            document.getElementById('modal-donor-info').innerText = `${name} | ${phone}`;
+            document.getElementById('modal-tax-info').innerText = `Email: ${email} ${pan ? '| PAN: ' + pan.toUpperCase() : ''}`;
+
+            const upiUrl = `upi://pay?pa=gausevadham@sbi&pn=Shree%20Gau%20Seva%20Dham%20Trust&am=${amount}&cu=INR&tn=Gau%20Seva%20Donation`;
+            document.getElementById('modal-upi-link').href = upiUrl;
+            document.getElementById('modal-qr-image').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(upiUrl)}`;
+
+            // WhatsApp Message for 80G Receipt & Confirmation
+            const waMsg = `🙏 *श्री गौ सेवा धाम ट्रस्ट (Shree Gau Seva Dham Trust)*\n\n` +
+                          `✨ *नया गौ सेवा दान (Quick Seva Donation)*\n` +
+                          `💰 *दान राशि (Amount):* ₹${amount.toLocaleString('en-IN')}\n` +
+                          `👤 *दानदाता (Name):* ${name}\n` +
+                          `📞 *मोबाइल (Phone):* ${phone}\n` +
+                          `📧 *ईमेल (Email):* ${email || 'N/A'}\n` +
+                          `🪪 *PAN Card:* ${pan ? pan.toUpperCase() : 'Not Provided'}\n\n` +
+                          `कृपया UPI पेमेंट के बाद 80G टैक्स छूट दान रसीद जारी करें। जय गौमाता! 🚩`;
+            
+            const waUrl = `https://api.whatsapp.com/send?phone=917303604248&text=${encodeURIComponent(waMsg)}`;
+            document.getElementById('modal-whatsapp-link').href = waUrl;
+
+            // Show payment modal
+            document.getElementById('seva-payment-modal').classList.remove('hidden');
+
+            // On mobile devices, attempt to open UPI app directly
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = upiUrl;
+            }
+        }
+
+        function closePaymentModal() {
+            document.getElementById('seva-payment-modal').classList.add('hidden');
+        }
+
+        // Copy UPI ID
+        function copyUPI() {
+            const upi = document.getElementById('upiId').innerText;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = upi;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            alert('UPI ID copied to clipboard: ' + upi);
+        }
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-saffron-600', 'text-white');
+                btn.classList.add('bg-white', 'text-earth-800');
+            });
+
+            event.target.classList.remove('bg-white', 'text-earth-800');
+            event.target.classList.add('bg-saffron-600', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Accordion FAQ Toggle
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                ans.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
